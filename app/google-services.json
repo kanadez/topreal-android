@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "118424482348",
+    "firebase_url": "https://topreal-f6db4.firebaseio.com",
+    "project_id": "topreal-f6db4",
+    "storage_bucket": "topreal-f6db4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118424482348:android:d98bd7d2846986d0",
+        "android_client_info": {
+          "package_name": "top.topreal.topreal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118424482348-bmjqueh79i013g6cbckmf1cbdsfe84ig.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "top.topreal.topreal",
+            "certificate_hash": "571c140a062ac0f98a11be27a52e42a193bae1a8"
+          }
+        },
+        {
+          "client_id": "118424482348-s3p6b1eofe42jtprp6agis0vq7f5uaie.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE2LI3hYvy71KJ1OCUKiTgCWXSbLbxBr0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118424482348-s3p6b1eofe42jtprp6agis0vq7f5uaie.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

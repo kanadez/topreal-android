@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="top.topreal.topreal.AuthActivity">
+
+    <TextView
+        android:id="@+id/auth_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You're authorized!"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/auth_caption_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Now you can close an app: it'll run in background."
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/auth_title_text" />
+
+    <TextView
+        android:id="@+id/auth_hint_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="To make a phone call push the icon ✆ on the Card screen."
+        app:layout_constraintTop_toBottomOf="@+id/auth_caption_text"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <Button
+        android:id="@+id/auth_close_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="OK"
+        android:onClick="minimizeApp"
+        app:layout_constraintTop_toBottomOf="@+id/auth_hint_text"
+        tools:layout_editor_absoluteX="8dp" />
+</android.support.constraint.ConstraintLayout>
