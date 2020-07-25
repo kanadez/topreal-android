@@ -24,7 +24,7 @@ public class XHR {
 
     public XHR(Context ctx){
         MyRequestQueue = Volley.newRequestQueue(ctx);
-        hostname = AppSettings.production ? AppSettings.prod_host : AppSettings.dev_host;
+        hostname = AppSettings.host;
         data = new HashMap<String, String>();
     }
 
@@ -39,7 +39,7 @@ public class XHR {
                 return data;
             }
         };
-
+        MyStringRequest.setShouldCache(false);
         MyRequestQueue.add(MyStringRequest);
     }
 

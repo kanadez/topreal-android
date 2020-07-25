@@ -64,6 +64,8 @@ public class LoginActivity extends AppCompatActivity {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
+                        Log.w("Login", response.toString());
+
                         try{
                             JSONObject json_object = new JSONObject(response);
 
@@ -80,8 +82,8 @@ public class LoginActivity extends AppCompatActivity {
                             else{
                                 HttpCookie id_cookie = new HttpCookie("id", json_object.getString("sUserId"));
                                 HttpCookie token_cookie = new HttpCookie("token", json_object.getString("sToken"));
-                                cookieStore.add(URI.create(AppSettings.dev_host), id_cookie);
-                                cookieStore.add(URI.create(AppSettings.dev_host), token_cookie);
+                                cookieStore.add(URI.create(AppSettings.host.concat("/")), id_cookie);
+                                cookieStore.add(URI.create(AppSettings.host.concat("/")), token_cookie);
 
                                 showAuthActivity(json_object.getString("sUserId"));
                             }

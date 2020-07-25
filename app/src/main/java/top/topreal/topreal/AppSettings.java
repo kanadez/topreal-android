@@ -5,7 +5,6 @@ package top.topreal.topreal;
  */
 
 public class AppSettings {
-    public static Boolean production = false;
-    public static String prod_host = "https://topreal.top";
-    public static String dev_host = "http://dev.topreal.top";
+    public static Boolean production = true;
+    public static String host = production ? "https://topreal.top" : "http://dev.topreal.top";
 }

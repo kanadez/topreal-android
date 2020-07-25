@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
         SharedPreferences prefs = this.getPreferences(this.MODE_PRIVATE);
         String fcm_token = prefs.getString("fcm_token", "");
-
+        Log.i("CookieStore", cookieStore.get(URI.create("https://topreal.top/")).toString());
         request = new XHR(this);
         request.post(
             "/api/user/isauth.json",
